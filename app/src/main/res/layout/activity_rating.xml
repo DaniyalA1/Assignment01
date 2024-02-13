@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RatingActivity"
+    android:background="#DEF8F8">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:background="@drawable/rounded_bottomborders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/transparent"
+            android:onClick="onBackButtonClicked"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="30dp"
+            android:alpha="0.7"
+            android:background="@drawable/circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pic1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginRight="-263dp"
+            android:alpha="0.7"
+            android:src="@drawable/aiden_walker"
+            app:layout_constraintBottom_toBottomOf="@id/pic"
+            app:layout_constraintEnd_toEndOf="@id/pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/intro"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="70dp"
+            android:text="'"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/m"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/johnc"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/john"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+
+            android:layout_marginTop="16dp"
+            android:alpha="0.7"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/johnc"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/line_bottom_text"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Drop me a review"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"  />
+
+        <TextView
+            android:id="@+id/smily"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/smily"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"  />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="328dp"
+        android:background="@drawable/border_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textbox1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="348dp"
+        android:text="Type your experience..."
+        android:textColor="#9B9B9B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/star_outline"
+        android:backgroundTint="#157177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="140dp"
+        android:background="@drawable/star_outline"
+        android:backgroundTint="#157177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/star_outline"
+        android:backgroundTint="#157177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/star_outline"
+        android:backgroundTint="#157177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="260dp"
+        android:background="@drawable/star_outline"
+        android:backgroundTint="#157177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/rounded_blue_button"
+        android:text="Submit Feedback"
+        android:textColor="#FFFFFF"
+        android:textSize="16.8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textbox1"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
