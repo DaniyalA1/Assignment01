@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF8F8"
+    tools:context=".BookingTimeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.3"
+        android:background="@drawable/rounded_bottomborders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.33"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/transparent"
+            android:onClick="onBackButtonClicked"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/pic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:alpha="0.7"
+            android:background="@drawable/circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pic1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="-290dp"
+            android:alpha="0.7"
+            android:src="@drawable/aiden_walker"
+            app:layout_constraintBottom_toBottomOf="@id/pic"
+            app:layout_constraintEnd_toEndOf="@id/pic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/n"
+            android:textColor="#157177"
+            android:textSize="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/johnc"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/john"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/star"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <TextView
+            android:id="@+id/text4.8"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="-45dp"
+            android:text="@string/rating"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="40dp"
+            android:alpha="0.7"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/johnc"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/line_bottom_text"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/money"
+            android:textColor="#FFC90A"
+            android:textSize="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <View
+            android:id="@+id/c1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#FFC90A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <ImageButton
+            android:id="@+id/message"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="22.5dp"
+            android:backgroundTint="#FFC90A"
+            android:src="@drawable/outline_textsms_24"
+            app:layout_constraintStart_toStartOf="@id/c1"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <View
+            android:id="@+id/c2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#FFC90A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="22.5dp"
+            android:backgroundTint="#FFC90A"
+            android:src="@drawable/phone"
+            app:layout_constraintStart_toStartOf="@id/c2"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:tint="#157177" />
+
+
+        <View
+            android:id="@+id/c3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#FFC90A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="22.5dp"
+            android:backgroundTint="#FFC90A"
+            android:src="@drawable/outline_videocam_24"
+            app:layout_constraintStart_toStartOf="@id/c3"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:tint="#157177" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="0dp"
+        android:focusedMonthDateColor="#157177"
+        android:maxDate="your_max_date"
+        android:minDate="your_min_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/time_slot_head"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-20dp"
+        android:text="@string/avail"
+        android:textSize="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendarView" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_slot_head">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/time_slot1"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="#DCEEEE"
+                android:paddingLeft="11.25dp"
+                android:paddingTop="6.25dp"
+                android:text="10.00 AM"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calendarView" />
+
+            <TextView
+                android:id="@+id/time_slot2"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="#0B8FAC"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="11.25dp"
+                android:paddingTop="6.25dp"
+                android:text="11.00 AM"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calendarView" />
+
+            <TextView
+                android:id="@+id/time_slot3"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="#DCEEEE"
+                android:paddingLeft="11.25dp"
+                android:paddingTop="6.25dp"
+                android:text="12.00 PM"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calendarView" />
+
+            <TextView
+                android:id="@+id/time_slot4"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="#DCEEEE"
+                android:paddingLeft="11.25dp"
+                android:paddingTop="6.25dp"
+                android:text="01.00 PM"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calendarView" />
+
+            <TextView
+                android:id="@+id/time_slot5"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="#DCEEEE"
+                android:paddingLeft="11.25dp"
+                android:paddingTop="6.25dp"
+                android:text="02.00 PM"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calendarView" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bookbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_blue_button"
+        android:text="Book an Appointment"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_slot_head"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
